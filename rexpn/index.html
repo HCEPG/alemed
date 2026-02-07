@@ -1,11 +1,68 @@
-‹<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-</head>
-<body>
-<body>
+  <title>REX-PN Study Guide</title>
+
   <style>
+    body {
+      font-family: Calibri, Arial, sans-serif;
+      counter-reset: question;
+      background: #ffffff;
+    }
+
+    .quiz-box {
+      max-width: 520px;
+      margin: 25px auto;
+      padding: 20px;
+      border: 2px solid #8ecaff;
+      border-radius: 8px;
+      background: #ffffff;
+      counter-increment: question;
+    }
+
+    .quiz-question::before {
+      content: counter(question) ". ";
+      font-weight: 600;
+      color: #666;
+    }
+
+    .quiz-question {
+      color: #444444;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .quiz-option {
+      color: #003366;
+      font-size: 18px;
+      margin: 8px 0;
+      padding: 10px;
+      border: 1px solid #003366;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .quiz-option:hover {
+      background-color: #f0f8ff;
+    }
+
+    .quiz-feedback {
+      margin-top: 15px;
+      font-size: 16px;
+      display: none;
+    }
+
+    .correct { border: 2px solid green; }
+    .incorrect { border: 2px solid #6B1A19; }
+  </style>
+</head>
+
+<body>
+
+<!-- ⬇⬇⬇ PASTE YOUR EXISTING REX-PN QUESTION BLOCKS BELOW ⬇⬇⬇ -->
+
+<style>
   .quiz-box { max-width: 520px; margin: 25px auto; padding: 20px; border: 2px solid #8ecaff; border-radius: 8px; background: #ffffff; font-family: Calibri, Arial, sans-serif; }
   .quiz-question { color: #444444; font-size: 20px; margin-bottom: 15px; }
   .quiz-option { color: #003366; font-size: 18px; margin: 8px 0; padding: 10px; border: 1px solid #003366; border-radius: 4px; cursor: pointer; }
@@ -18324,5 +18381,8 @@
     feedbackEl.style.display = 'block';
   }
 </script>
+
+<!-- ⬆⬆⬆ END REX-PN QUESTIONS ⬆⬆⬆ -->
+
 </body>
 </html>
