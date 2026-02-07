@@ -55,6 +55,12 @@
     .incorrect { border: 2px solid #6B1A19; }
   </style>
 </head>
+<script>
+document.querySelectorAll('.quiz-question').forEach(q => {
+  q.textContent = q.textContent.replace(/^\s*Question\s*\d+[:.]?\s*/i, '');
+  q.textContent = q.textContent.replace(/^\s*\d+[:.]?\s*/, '');
+});
+</script>
 
 <body>
 
