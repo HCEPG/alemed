@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>REX-PN Study Guide</title>
+  <title>REX PN Prep Guide</title>
 
   <style>
     body {
       font-family: Calibri, Arial, sans-serif;
-      background: #ffffff;
       counter-reset: question;
     }
 
@@ -22,9 +21,8 @@
     }
 
     .quiz-question::before {
-      content: counter(question) ". ";
-      font-weight: 600;
-      color: #666;
+      content: "Question " counter(question) ": ";
+      font-weight: bold;
     }
 
     .quiz-question {
@@ -40,13 +38,29 @@
       padding: 10px;
       border: 1px solid #003366;
       border-radius: 4px;
+      cursor: pointer;
     }
+
+    .quiz-option:hover {
+      background-color: #f0f8ff;
+    }
+
+    .quiz-feedback {
+      margin-top: 15px;
+      font-size: 16px;
+      display: none;
+    }
+
+    .correct { border: 2px solid green; }
+    .incorrect { border: 2px solid #6B1A19; }
   </style>
 </head>
 
 <body>
 
-<style>
+<!-- ⬇⬇⬇ PASTE YOUR FULL REX PN QUESTION CONTENT BELOW ⬇⬇⬇ -->
+
+  <style>
   .quiz-box { max-width: 520px; margin: 25px auto; padding: 20px; border: 2px solid #8ecaff; border-radius: 8px; background: #ffffff; font-family: Calibri, Arial, sans-serif; }
   .quiz-question { color: #444444; font-size: 20px; margin-bottom: 15px; }
   .quiz-option { color: #003366; font-size: 18px; margin: 8px 0; padding: 10px; border: 1px solid #003366; border-radius: 4px; cursor: pointer; }
@@ -18365,6 +18379,8 @@
     feedbackEl.style.display = 'block';
   }
 </script>
+
+<!-- ⬆⬆⬆ END OF REX PN QUESTIONS ⬆⬆⬆ -->
 
 </body>
 </html>
