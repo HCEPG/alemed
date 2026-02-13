@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nursing Exam Template</title>
+<title>FINAL STABLE EXAM ENGINE</title>
 
 <style>
 body {
@@ -74,7 +75,7 @@ body {
   .incorrect { border: 2px solid #6B1A19; }
 </style>
 
-<div class="quiz-box">
+<div class="quiz-box"> 
   <div class="quiz-question">
     What is the most effective method to assess respiratory distress syndrome in an infant?
   </div>
@@ -18363,8 +18364,8 @@ body {
 <!-- END QUESTION AREA -->
 
 <script>
-function showFeedback(optionElement, isCorrect, quizId) {
-  const feedbackEl = document.getElementById(quizId);
+function showFeedback(optionElement, isCorrect, feedbackId) {
+  const feedbackEl = document.getElementById(feedbackId);
   const allOptions = optionElement.parentElement.querySelectorAll('.quiz-option');
 
   allOptions.forEach(opt => opt.classList.remove('correct', 'incorrect'));
@@ -18374,13 +18375,12 @@ function showFeedback(optionElement, isCorrect, quizId) {
     optionElement.classList.add('correct');
     feedbackEl.classList.add('feedback-correct');
     feedbackEl.textContent = feedbackEl.getAttribute('data-rationale');
-} else {
-  optionElement.classList.add('incorrect');
-  feedbackEl.classList.add('feedback-incorrect');
-  const wrongText = optionElement.getAttribute('data-wrong') || "Incorrect.";
-  feedbackEl.textContent = "Incorrect: " + wrongText;
-}
-
+  } else {
+    optionElement.classList.add('incorrect');
+    feedbackEl.classList.add('feedback-incorrect');
+    const wrongText = optionElement.getAttribute('data-wrong') || "Incorrect.";
+    feedbackEl.textContent = "Incorrect: " + wrongText;
+  }
 
   feedbackEl.style.display = 'block';
 }
@@ -18392,8 +18392,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const options = quiz.querySelectorAll(".quiz-option");
     const feedback = quiz.querySelector(".quiz-feedback");
 
-    // Pick random correct index
-    const correctIndex = crypto.getRandomValues(new Uint32Array(1))[0] % 4;s 
+    // Strong random correct index (balanced distribution)
+    const correctIndex = crypto.getRandomValues(new Uint32Array(1))[0] % 4;
 
     options.forEach((option, index) => {
       option.onclick = function() {
@@ -18406,10 +18406,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>
-"""
-
-file_path = "/mnt/data/MASTER_EXAM_TEMPLATE_RANDOMIZED.html"
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-file_path
