@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FINAL STABLE EXAM ENGINE</title>
+<title>2026 REX PN Prep Guide: Mock Examination</title>
 
 <style>
 body {
@@ -60,6 +60,21 @@ body {
 <body>
 
 <!-- COPY YOUR QUESTIONS BELOW THIS LINE -->
+
+
+
+  <style>
+  .quiz-box { max-width: 520px; margin: 25px auto; padding: 20px; border: 2px solid #8ecaff; border-radius: 8px; background: #ffffff; font-family: Calibri, Arial, sans-serif; }
+  .quiz-question { color: #444444; font-size: 20px; margin-bottom: 15px; }
+  .quiz-option { color: #003366; font-size: 18px; margin: 8px 0; padding: 10px; border: 1px solid #003366; border-radius: 4px; cursor: pointer; }
+  .quiz-option:hover { background-color: #f0f8ff; }
+  .quiz-feedback { margin-top: 15px; font-size: 16px; font-family: Calibri, Arial, sans-serif; display: none; }
+  .feedback-correct { color: green; }
+  .feedback-incorrect { color: #6B1A19; }
+  .correct { border: 2px solid green; }
+  .incorrect { border: 2px solid #6B1A19; }
+</style>
+
 
 <!-- 1 -->
 <div class="quiz-box">
@@ -563,8 +578,6 @@ body {
 
 </div>
 
-<!-- END QUESTION AREA -->
-
 <script>
 function showFeedback(optionElement, isCorrect, feedbackId) {
   const feedbackEl = document.getElementById(feedbackId);
@@ -587,7 +600,7 @@ function showFeedback(optionElement, isCorrect, feedbackId) {
   feedbackEl.style.display = 'block';
 }
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
   const quizzes = document.querySelectorAll(".quiz-box");
 
   quizzes.forEach((quiz, qIndex) => {
