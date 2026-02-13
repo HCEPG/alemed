@@ -587,7 +587,7 @@ function showFeedback(optionElement, isCorrect, feedbackId) {
   feedbackEl.style.display = 'block';
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+window.onload = function() {
   const quizzes = document.querySelectorAll(".quiz-box");
 
   quizzes.forEach((quiz, qIndex) => {
