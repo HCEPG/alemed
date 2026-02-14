@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CPNRE Study Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 CPNRE Prep Guide: Mock Examination</title>
 
-  <style>
-    body {
-      font-family: Calibri, Arial, sans-serif;
-      counter-reset: question;
-    }
+<style>
+body {
+  font-family: Calibri, Arial, sans-serif;
+  counter-reset: question;
+}
 
-    .quiz-box {
-      max-width: 520px;
-      margin: 25px auto;
-      padding: 20px;
-      border: 2px solid #8ecaff;
-      border-radius: 8px;
-      background: #ffffff;
-      counter-increment: question;
-    }
+.quiz-box {
+  max-width: 520px;
+  margin: 25px auto;
+  padding: 20px;
+  border: 2px solid #8ecaff;
+  border-radius: 8px;
+  background: #ffffff;
+  counter-increment: question;
+}
 
-    .quiz-question::before {
-      content: "Question " counter(question) ": ";
-      font-weight: bold;
-    }
+.quiz-question::before {
+  content: "Question " counter(question) ": ";
+  font-weight: bold;
+}
 
-    .quiz-question {
-      color: #444444;
-      font-size: 20px;
-      margin-bottom: 15px;
-    }
+.quiz-question {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
 
-    .quiz-option {
-      color: #003366;
-      font-size: 18px;
-      margin: 8px 0;
-      padding: 10px;
-      border: 1px solid #003366;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+.quiz-option {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #003366;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-    .quiz-option:hover {
-      background-color: #f0f8ff;
-    }
+.quiz-option:hover {
+  background-color: #f0f8ff;
+}
 
-    .quiz-feedback {
-      margin-top: 15px;
-      font-size: 16px;
-      display: none;
-    }
+.correct { border: 2px solid green; }
+.incorrect { border: 2px solid #6B1A19; }
 
-    .correct { border: 2px solid green; }
-    .incorrect { border: 2px solid #6B1A19; }
-  </style>
+.quiz-feedback {
+  margin-top: 15px;
+  display: none;
+  font-size: 16px;
+}
+
+.feedback-correct { color: green; }
+.feedback-incorrect { color: #6B1A19; }
+</style>
 </head>
 
 <body>
 
-<!-- ⬇⬇⬇ PASTE YOUR FULL CPNRE QUESTION CONTENT BELOW ⬇⬇⬇ -->
+<!-- COPY YOUR QUESTIONS BELOW THIS LINE -->
+
+
 
   <style>
   .quiz-box { max-width: 520px; margin: 25px auto; padding: 20px; border: 2px solid #8ecaff; border-radius: 8px; background: #ffffff; font-family: Calibri, Arial, sans-serif; }
@@ -72,7 +75,7 @@
   .incorrect { border: 2px solid #6B1A19; }
 </style>
 
-<div class="quiz-box">
+<div class="quiz-box"> 
   <div class="quiz-question">
     What is the most effective method to assess respiratory distress syndrome in an infant?
   </div>
@@ -18358,31 +18361,48 @@
   <div id="q1420-feedback" class="quiz-feedback" data-rationale="Professional boundaries and confidentiality protect both the patient and the nurse."></div>
 </div>
 
-
+<!-- END QUESTION AREA -->
 
 <script>
-  function showFeedback(optionElement, isCorrect, quizId) {
-    const feedbackEl = document.getElementById(quizId + '-feedback');
-    const allOptions = optionElement.parentElement.querySelectorAll('.quiz-option');
-    allOptions.forEach(opt => opt.classList.remove('correct', 'incorrect'));
-    feedbackEl.classList.remove('feedback-correct', 'feedback-incorrect');
-    if (isCorrect) {
-      optionElement.classList.add('correct');
-      feedbackEl.classList.add('feedback-correct');
-      feedbackEl.textContent = feedbackEl.getAttribute('data-rationale');
-    } else {
-      optionElement.classList.add('incorrect');
-      feedbackEl.classList.add('feedback-incorrect');
-      const wrongText = optionElement.getAttribute('data-wrong') || 'This option is not correct.';
-      feedbackEl.textContent = 'Incorrect: ' + wrongText;
-    }
-    feedbackEl.style.display = 'block';
-  }
-</script>
+function showFeedback(optionElement, isCorrect, feedbackId) {
+  const feedbackEl = document.getElementById(feedbackId);
+  const allOptions = optionElement.parentElement.querySelectorAll('.quiz-option');
 
-<!-- ⬆⬆⬆ END OF CPNRE QUESTIONS ⬆⬆⬆ -->
+  allOptions.forEach(opt => opt.classList.remove('correct', 'incorrect'));
+  feedbackEl.classList.remove('feedback-correct', 'feedback-incorrect');
+
+  if (isCorrect) {
+    optionElement.classList.add('correct');
+    feedbackEl.classList.add('feedback-correct');
+    feedbackEl.textContent = feedbackEl.getAttribute('data-rationale');
+  } else {
+    optionElement.classList.add('incorrect');
+    feedbackEl.classList.add('feedback-incorrect');
+    const wrongText = optionElement.getAttribute('data-wrong') || "Incorrect.";
+    feedbackEl.textContent = "Incorrect: " + wrongText;
+  }
+
+  feedbackEl.style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  const quizzes = document.querySelectorAll(".quiz-box");
+
+  quizzes.forEach((quiz, qIndex) => {
+    const options = quiz.querySelectorAll(".quiz-option");
+    const feedback = quiz.querySelector(".quiz-feedback");
+
+    // Strong random correct index (balanced distribution)
+    const correctIndex = crypto.getRandomValues(new Uint32Array(1))[0] % 4;
+
+    options.forEach((option, index) => {
+      option.onclick = function() {
+        showFeedback(this, index === correctIndex, feedback.id);
+      };
+    });
+  });
+});
+</script>
 
 </body>
 </html>
-ƒ
-
