@@ -10,452 +10,1322 @@
   .incorrect { border: 2px solid #6B1A19; }
 </style>
 
-<!-- 1 -->
-<!-- 1 -->
+<!-- TEST QUIZ 1 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 1:</strong> What are the correct medication math answers?</div><div class="quiz-option" data-wrong="These values do not match the correct calculations." onclick="showFeedback(this,false,'quiz1')">2500 mL, 100 mL, 1 mL, 300 mL, 10 gtts/min</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz1')">3000 mL, 125 mL, 0.5 mL, 360 mL, 12–13 gtts/min, 17–18 gtts/min, 21 gtts/min, 31 gtts/min, decrease flow rate by 50 gtt/min</div><div class="quiz-option" data-wrong="These rates are unsafe or incorrect." onclick="showFeedback(this,false,'quiz1')">3200 mL, 150 mL, 2 mL, 400 mL</div><div class="quiz-option" data-wrong="These values underestimate required dosing." onclick="showFeedback(this,false,'quiz1')">2000 mL, 90 mL, 0.25 mL</div>
+
+<div class="quiz-question">
+  <strong>Question 1:</strong> What are the correct medication math answers?</div>
+
+
+<div class="quiz-option" data-wrong="These values do not match the correct calculations." onclick="showFeedback(this,false,'quiz1')">2500 mL, 100 mL, 1 mL, 300 mL, 10 gtts/min</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz1')">3000 mL, 125 mL, 0.5 mL, 360 mL, 12–13 gtts/min, 17–18 gtts/min, 21 gtts/min, 31 gtts/min, decrease flow rate by 50 gtt/min</div>
+
+
+<div class="quiz-option" data-wrong="These rates are unsafe or incorrect." onclick="showFeedback(this,false,'quiz1')">3200 mL, 150 mL, 2 mL, 400 mL</div>
+
+
+<div class="quiz-option" data-wrong="These values underestimate required dosing." onclick="showFeedback(this,false,'quiz1')">2000 mL, 90 mL, 0.25 mL</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Proper calculations ensure safe and accurate drug and fluid administration." id="quiz1-feedback"></div>
+<div id="quiz1-feedback" class="quiz-feedback"
+     data-rationale="Proper calculations ensure safe and accurate drug and fluid administration.">
 </div>
-<!-- 2 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 2:</strong> What is the correct response to something unusual that may require physician intervention?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz2')">Gather vitals and assessment data, complete an SBAR, then contact the physician</div><div class="quiz-option" data-wrong="Documentation alone is insufficient." onclick="showFeedback(this,false,'quiz2')">Document and reassess later</div><div class="quiz-option" data-wrong="Delegation does not replace assessment." onclick="showFeedback(this,false,'quiz2')">Ask another nurse to call</div><div class="quiz-option" data-wrong="Calling without data limits effective communication." onclick="showFeedback(this,false,'quiz2')">Contact the physician immediately without assessment</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Collecting data first enables clear, informed SBAR communication." id="quiz2-feedback"></div>
 </div>
-<!-- 3 -->
+
+<!-- TEST QUIZ 2 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 3:</strong> What is the most common dietary recommendation for pregnant women?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz3')">Regular diet with an additional 300–400 calories per day</div><div class="quiz-option" data-wrong="This underestimates caloric needs." onclick="showFeedback(this,false,'quiz3')">No change in caloric intake</div><div class="quiz-option" data-wrong="Excess calories are unnecessary." onclick="showFeedback(this,false,'quiz3')">An extra 800–1000 calories daily</div><div class="quiz-option" data-wrong="Diet restriction is unsafe." onclick="showFeedback(this,false,'quiz3')">Calorie-restricted diet</div>
+
+<div class="quiz-question">
+  <strong>Question 2:</strong> What is the correct response to something unusual that may require physician intervention?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz2')">Gather vitals and assessment data, complete an SBAR, then contact the physician</div>
+
+
+<div class="quiz-option" data-wrong="Documentation alone is insufficient." onclick="showFeedback(this,false,'quiz2')">Document and reassess later</div>
+
+
+<div class="quiz-option" data-wrong="Delegation does not replace assessment." onclick="showFeedback(this,false,'quiz2')">Ask another nurse to call</div>
+
+
+<div class="quiz-option" data-wrong="Calling without data limits effective communication." onclick="showFeedback(this,false,'quiz2')">Contact the physician immediately without assessment</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="An extra 300–400 calories supports fetal growth." id="quiz3-feedback"></div>
+<div id="quiz2-feedback" class="quiz-feedback"
+     data-rationale="Collecting data first enables clear, informed SBAR communication.">
 </div>
-<!-- 4 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 4:</strong> If D5W is added to a blood transfusion, what will occur?</div><div class="quiz-option" data-wrong="Electrolyte balance is not the issue." onclick="showFeedback(this,false,'quiz4')">Electrolyte stability</div><div class="quiz-option" data-wrong="Coagulation is not the effect." onclick="showFeedback(this,false,'quiz4')">Clot formation</div><div class="quiz-option" data-wrong="D5W does not preserve cells." onclick="showFeedback(this,false,'quiz4')">Cell preservation</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz4')">Hemolysis of erythrocytes</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="D5W causes red blood cell hemolysis when mixed with blood products." id="quiz4-feedback"></div>
 </div>
-<!-- 5 -->
+
+<!-- TEST QUIZ 3 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 5:</strong> What is a typical setup of a blood transfusion?</div><div class="quiz-option" data-wrong="LR is not standard." onclick="showFeedback(this,false,'quiz5')">Lactated Ringer’s with blood</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz5')">Normal saline and blood with a Y-tube</div><div class="quiz-option" data-wrong="Single-line setup is unsafe." onclick="showFeedback(this,false,'quiz5')">Blood only without saline</div><div class="quiz-option" data-wrong="Dextrose is incompatible." onclick="showFeedback(this,false,'quiz5')">D5W with blood</div>
+
+<div class="quiz-question">
+  <strong>Question 3:</strong> What is the most common dietary recommendation for pregnant women?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz3')">Regular diet with an additional 300–400 calories per day</div>
+
+
+<div class="quiz-option" data-wrong="This underestimates caloric needs." onclick="showFeedback(this,false,'quiz3')">No change in caloric intake</div>
+
+
+<div class="quiz-option" data-wrong="Excess calories are unnecessary." onclick="showFeedback(this,false,'quiz3')">An extra 800–1000 calories daily</div>
+
+
+<div class="quiz-option" data-wrong="Diet restriction is unsafe." onclick="showFeedback(this,false,'quiz3')">Calorie-restricted diet</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Normal saline with a Y-tube is compatible and standard." id="quiz5-feedback"></div>
+<div id="quiz3-feedback" class="quiz-feedback"
+     data-rationale="An extra 300–400 calories supports fetal growth.">
 </div>
-<!-- 6 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 6:</strong> If back pain, hives, chills, edema, or increased temperature occur during a blood transfusion, what should be done?</div><div class="quiz-option" data-wrong="Medications may be ordered after the transfusion is stopped, but administering them before stopping delays proper emergency management." onclick="showFeedback(this,false,'quiz6')">Administer antihistamines immediately</div><div class="quiz-option" data-wrong="Ignoring symptoms during a transfusion can allow progression to anaphylaxis, circulatory overload, or acute hemolysis." onclick="showFeedback(this,false,'quiz6')">Ignore and reassess later</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz6')">Stop the transfusion immediately</div><div class="quiz-option" data-wrong="Continuing the transfusion can worsen a hemolytic or allergic reaction and increase risk of life-threatening complications." onclick="showFeedback(this,false,'quiz6')">Continue to monitor</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Any suspected transfusion reaction requires immediate cessation of the transfusion, maintenance of IV access with normal saline, and prompt notification of the provider." id="quiz6-feedback"></div>
 </div>
-<!-- 7 -->
+
+<!-- TEST QUIZ 4 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 7:</strong> If these symptoms are NOT moderate during a blood transfusion, what should be done?</div><div class="quiz-option" data-wrong="Observation alone is insufficient." onclick="showFeedback(this,false,'quiz7')">Observe only</div><div class="quiz-option" data-wrong="Documentation is secondary." onclick="showFeedback(this,false,'quiz7')">Document and finish later</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz7')">Stop the transfusion and report to the physician</div><div class="quiz-option" data-wrong="Continuing risks harm." onclick="showFeedback(this,false,'quiz7')">Continue at a slower rate</div>
+
+<div class="quiz-question">
+  <strong>Question 4:</strong> If D5W is added to a blood transfusion, what will occur?</div>
+
+
+<div class="quiz-option" data-wrong="Electrolyte balance is not the issue." onclick="showFeedback(this,false,'quiz4')">Electrolyte stability</div>
+
+
+<div class="quiz-option" data-wrong="Coagulation is not the effect." onclick="showFeedback(this,false,'quiz4')">Clot formation</div>
+
+
+<div class="quiz-option" data-wrong="D5W does not preserve cells." onclick="showFeedback(this,false,'quiz4')">Cell preservation</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz4')">Hemolysis of erythrocytes</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Severe reactions require immediate cessation and notification." id="quiz7-feedback"></div>
+<div id="quiz4-feedback" class="quiz-feedback"
+     data-rationale="D5W causes red blood cell hemolysis when mixed with blood products.">
 </div>
-<!-- 8 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 8:</strong> How many hours is blood acceptable to hang?</div><div class="quiz-option" data-wrong="This exceeds safe limits." onclick="showFeedback(this,false,'quiz8')">6 hours</div><div class="quiz-option" data-wrong="Bacterial growth increases after 4 hours." onclick="showFeedback(this,false,'quiz8')">8 hours</div><div class="quiz-option" data-wrong="This is too short." onclick="showFeedback(this,false,'quiz8')">1 hour</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz8')">4 hours</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Beyond 4 hours, bacterial growth risk increases." id="quiz8-feedback"></div>
 </div>
-<!-- 9 -->
+
+<!-- TEST QUIZ 5 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 9:</strong> If blood is ordered to hang for 5 hours or more, what is required?</div><div class="quiz-option" data-wrong="Proceeding is unsafe." onclick="showFeedback(this,false,'quiz9')">Proceed as ordered</div><div class="quiz-option" data-wrong="Delaying without clarification is inappropriate." onclick="showFeedback(this,false,'quiz9')">Delay without contacting the physician</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz9')">Clarify with the physician and remind them of the 4-hour limit</div><div class="quiz-option" data-wrong="Rate changes do not change the limit." onclick="showFeedback(this,false,'quiz9')">Increase the rate</div>
+
+<div class="quiz-question">
+  <strong>Question 5:</strong> What is a typical setup of a blood transfusion?</div>
+
+
+<div class="quiz-option" data-wrong="LR is not standard." onclick="showFeedback(this,false,'quiz5')">Lactated Ringer’s with blood</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz5')">Normal saline and blood with a Y-tube</div>
+
+
+<div class="quiz-option" data-wrong="Single-line setup is unsafe." onclick="showFeedback(this,false,'quiz5')">Blood only without saline</div>
+
+
+<div class="quiz-option" data-wrong="Dextrose is incompatible." onclick="showFeedback(this,false,'quiz5')">D5W with blood</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Blood must not hang beyond 4 hours due to infection risk." id="quiz9-feedback"></div>
+<div id="quiz5-feedback" class="quiz-feedback"
+     data-rationale="Normal saline with a Y-tube is compatible and standard.">
 </div>
-<!-- 10 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 10:</strong> What is the most common blood infusion rate?</div><div class="quiz-option" data-wrong="This is too fast." onclick="showFeedback(this,false,'quiz10')">1 hour at 300 mL/hour</div><div class="quiz-option" data-wrong="This is too slow." onclick="showFeedback(this,false,'quiz10')">5–6 hours</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz10')">2–3 hours at 100–150 mL/hour</div><div class="quiz-option" data-wrong="Rates vary but this is not standard." onclick="showFeedback(this,false,'quiz10')">4 hours at 50 mL/hour</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Standard rates balance safety and efficiency." id="quiz10-feedback"></div>
 </div>
-<!-- 11 -->
+
+<!-- TEST QUIZ 6 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 11:</strong> If the MAR directs blood and antibiotics, which is given first?</div><div class="quiz-option" data-wrong="Blood first may increase risk." onclick="showFeedback(this,false,'quiz11')">Blood, then antibiotic</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz11')">Antibiotic, then blood</div><div class="quiz-option" data-wrong="Delaying antibiotics is inappropriate." onclick="showFeedback(this,false,'quiz11')">Delay antibiotics</div><div class="quiz-option" data-wrong="Simultaneous administration is unsafe." onclick="showFeedback(this,false,'quiz11')">Both together</div>
+
+<div class="quiz-question">
+  <strong>Question 6:</strong> If back pain, hives, chills, edema, or increased temperature occur during a blood transfusion, what should be done?</div>
+
+
+<div class="quiz-option" data-wrong="Medications may be ordered after the transfusion is stopped, but administering them before stopping delays proper emergency management." onclick="showFeedback(this,false,'quiz6')">Administer antihistamines immediately</div>
+
+
+<div class="quiz-option" data-wrong="Ignoring symptoms during a transfusion can allow progression to anaphylaxis, circulatory overload, or acute hemolysis." onclick="showFeedback(this,false,'quiz6')">Ignore and reassess later</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz6')">Stop the transfusion immediately</div>
+
+
+<div class="quiz-option" data-wrong="Continuing the transfusion can worsen a hemolytic or allergic reaction and increase risk of life-threatening complications." onclick="showFeedback(this,false,'quiz6')">Continue to monitor</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Treat potential infection before transfusion." id="quiz11-feedback"></div>
+<div id="quiz6-feedback" class="quiz-feedback"
+     data-rationale="Any suspected transfusion reaction requires immediate cessation of the transfusion, maintenance of IV access with normal saline, and prompt notification of the provider.">
 </div>
-<!-- 12 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 12:</strong> How long should a patient be monitored after starting a blood transfusion?</div><div class="quiz-option" data-wrong="Immediate reactions occur early." onclick="showFeedback(this,false,'quiz12')">2 hours</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz12')">5–15 minutes</div><div class="quiz-option" data-wrong="This misses early reactions." onclick="showFeedback(this,false,'quiz12')">30–60 minutes</div><div class="quiz-option" data-wrong="Monitoring must start immediately." onclick="showFeedback(this,false,'quiz12')">After completion</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Early monitoring detects acute reactions." id="quiz12-feedback"></div>
 </div>
-<!-- 13 -->
+
+<!-- TEST QUIZ 7 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 13:</strong> Which keywords often indicate incorrect answers on the REX-PN?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz13')">Absolute terms such as “always,” “never,” or “must”</div><div class="quiz-option" data-wrong="Specific ranges are often correct." onclick="showFeedback(this,false,'quiz13')">Numerical ranges</div><div class="quiz-option" data-wrong="Conditional language is common." onclick="showFeedback(this,false,'quiz13')">“May” or “often”</div><div class="quiz-option" data-wrong="Clinical nuance is expected." onclick="showFeedback(this,false,'quiz13')">Context-based statements</div>
+
+<div class="quiz-question">
+  <strong>Question 7:</strong> If these symptoms are NOT moderate during a blood transfusion, what should be done?</div>
+
+
+<div class="quiz-option" data-wrong="Observation alone is insufficient." onclick="showFeedback(this,false,'quiz7')">Observe only</div>
+
+
+<div class="quiz-option" data-wrong="Documentation is secondary." onclick="showFeedback(this,false,'quiz7')">Document and finish later</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz7')">Stop the transfusion and report to the physician</div>
+
+
+<div class="quiz-option" data-wrong="Continuing risks harm." onclick="showFeedback(this,false,'quiz7')">Continue at a slower rate</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Absolutist language leaves no room for clinical nuance." id="quiz13-feedback"></div>
+<div id="quiz7-feedback" class="quiz-feedback"
+     data-rationale="Severe reactions require immediate cessation and notification.">
 </div>
-<!-- 14 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 14:</strong> How many nurses are required to check blood before transfusion?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz14')">Two; at least one must be an RN</div><div class="quiz-option" data-wrong="Unlicensed staff cannot verify blood." onclick="showFeedback(this,false,'quiz14')">RN and unlicensed staff</div><div class="quiz-option" data-wrong="Single checks increase error risk." onclick="showFeedback(this,false,'quiz14')">One nurse only</div><div class="quiz-option" data-wrong="Two LPNs are not permitted." onclick="showFeedback(this,false,'quiz14')">Two LPNs</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Two-person verification reduces transfusion errors." id="quiz14-feedback"></div>
 </div>
-<!-- 15 -->
+
+<!-- TEST QUIZ 8 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 15:</strong> What are the four major types of acute blood transfusion reactions?</div><div class="quiz-option" data-wrong="These describe organ systems rather than defined transfusion reaction types." onclick="showFeedback(this,false,'quiz15')">Respiratory, renal, hepatic, cardiac</div><div class="quiz-option" data-wrong="This list omits acute hemolytic reactions, which are among the most severe and exam-relevant transfusion complications." onclick="showFeedback(this,false,'quiz15')">Circulatory overload, febrile, anaphylactic, and bacterial</div><div class="quiz-option" data-wrong="Viral transmission is a transfusion risk but is not classified as an acute transfusion reaction in standard nursing categories." onclick="showFeedback(this,false,'quiz15')">Hemolytic, viral, allergic, delayed</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz15')">Acute hemolytic, febrile non-hemolytic, allergic/anaphylactic, and circulatory overload</div>
+
+<div class="quiz-question">
+  <strong>Question 8:</strong> How many hours is blood acceptable to hang?</div>
+
+
+<div class="quiz-option" data-wrong="This exceeds safe limits." onclick="showFeedback(this,false,'quiz8')">6 hours</div>
+
+
+<div class="quiz-option" data-wrong="Bacterial growth increases after 4 hours." onclick="showFeedback(this,false,'quiz8')">8 hours</div>
+
+
+<div class="quiz-option" data-wrong="This is too short." onclick="showFeedback(this,false,'quiz8')">1 hour</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz8')">4 hours</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="The four major acute transfusion reactions emphasized in nursing practice are hemolytic, febrile non-hemolytic, allergic or anaphylactic, and circulatory overload (TACO)." id="quiz15-feedback"></div>
+<div id="quiz8-feedback" class="quiz-feedback"
+     data-rationale="Beyond 4 hours, bacterial growth risk increases.">
 </div>
-<!-- 16 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 16:</strong> What is the most common treatment for COPD?</div><div class="quiz-option" data-wrong="Oxygen avoidance is unsafe." onclick="showFeedback(this,false,'quiz16')">No oxygen therapy</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz16')">Oxygen therapy at 2 L/min or less with close monitoring</div><div class="quiz-option" data-wrong="Ventilation is not first-line." onclick="showFeedback(this,false,'quiz16')">Mechanical ventilation routinely</div><div class="quiz-option" data-wrong="High oxygen can worsen CO2 retention." onclick="showFeedback(this,false,'quiz16')">High-flow oxygen</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Careful oxygen titration avoids hypercapnia while maintaining oxygenation." id="quiz16-feedback"></div>
 </div>
-<!-- 17 -->
+
+<!-- TEST QUIZ 9 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 17:</strong> What is the correct method to administer a fentanyl patch?</div><div class="quiz-option" data-wrong="Loose placement risks underdosing." onclick="showFeedback(this,false,'quiz17')">Place without securing edges</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz17')">Press edges for adherence, sign with initials/date/time, cover for bathing</div><div class="quiz-option" data-wrong="Heat increases absorption dangerously." onclick="showFeedback(this,false,'quiz17')">Apply heat to improve absorption</div><div class="quiz-option" data-wrong="Cutting alters dosing." onclick="showFeedback(this,false,'quiz17')">Cut the patch</div>
+
+<div class="quiz-question">
+  <strong>Question 9:</strong> If blood is ordered to hang for 5 hours or more, what is required?</div>
+
+
+<div class="quiz-option" data-wrong="Proceeding is unsafe." onclick="showFeedback(this,false,'quiz9')">Proceed as ordered</div>
+
+
+<div class="quiz-option" data-wrong="Delaying without clarification is inappropriate." onclick="showFeedback(this,false,'quiz9')">Delay without contacting the physician</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz9')">Clarify with the physician and remind them of the 4-hour limit</div>
+
+
+<div class="quiz-option" data-wrong="Rate changes do not change the limit." onclick="showFeedback(this,false,'quiz9')">Increase the rate</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Proper adhesion and labeling ensure safe, consistent dosing." id="quiz17-feedback"></div>
+<div id="quiz9-feedback" class="quiz-feedback"
+     data-rationale="Blood must not hang beyond 4 hours due to infection risk.">
 </div>
-<!-- 18 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 18:</strong> How should a wound be cleansed?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz18')">Proximal to distal using midline, near side, then far side</div><div class="quiz-option" data-wrong="Random order increases infection risk." onclick="showFeedback(this,false,'quiz18')">Any order</div><div class="quiz-option" data-wrong="This spreads contamination." onclick="showFeedback(this,false,'quiz18')">Distal to proximal</div><div class="quiz-option" data-wrong="Scrubbing damages tissue." onclick="showFeedback(this,false,'quiz18')">Aggressive scrubbing</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Cleaning from clean to dirty minimizes contamination." id="quiz18-feedback"></div>
 </div>
-<!-- 19 -->
+
+<!-- TEST QUIZ 10 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 19:</strong> What is recommended for a patient undergoing postural drainage?</div><div class="quiz-option" data-wrong="Bed rest alone is insufficient." onclick="showFeedback(this,false,'quiz19')">Strict bed rest</div><div class="quiz-option" data-wrong="Dry air worsens secretions." onclick="showFeedback(this,false,'quiz19')">Dry environment</div><div class="quiz-option" data-wrong="Fluid restriction thickens secretions." onclick="showFeedback(this,false,'quiz19')">Restrict fluids</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz19')">Increase fluid intake</div>
+
+<div class="quiz-question">
+  <strong>Question 10:</strong> What is the most common blood infusion rate?</div>
+
+
+<div class="quiz-option" data-wrong="This is too fast." onclick="showFeedback(this,false,'quiz10')">1 hour at 300 mL/hour</div>
+
+
+<div class="quiz-option" data-wrong="This is too slow." onclick="showFeedback(this,false,'quiz10')">5–6 hours</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz10')">2–3 hours at 100–150 mL/hour</div>
+
+
+<div class="quiz-option" data-wrong="Rates vary but this is not standard." onclick="showFeedback(this,false,'quiz10')">4 hours at 50 mL/hour</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Fluids thin secretions and improve drainage." id="quiz19-feedback"></div>
+<div id="quiz10-feedback" class="quiz-feedback"
+     data-rationale="Standard rates balance safety and efficiency.">
 </div>
-<!-- 20 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 20:</strong> How should blood pressure be taken after a mastectomy?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz20')">Use the opposite arm and elevate the arm if one breast was removed</div><div class="quiz-option" data-wrong="Leg BP is not first-line here." onclick="showFeedback(this,false,'quiz20')">Use the leg routinely</div><div class="quiz-option" data-wrong="Affected side risks lymphedema." onclick="showFeedback(this,false,'quiz20')">Use the affected arm</div><div class="quiz-option" data-wrong="Pain control alone is insufficient." onclick="showFeedback(this,false,'quiz20')">Analgesic only, no BP</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Using the unaffected side prevents lymphedema and complications." id="quiz20-feedback"></div>
 </div>
-<!-- 21 -->
+
+<!-- TEST QUIZ 11 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 21:</strong> What are common symptoms of systemic lupus erythematosus (SLE)?</div><div class="quiz-option" data-wrong="These are not hallmark SLE findings." onclick="showFeedback(this,false,'quiz21')">Productive cough and wheezing</div><div class="quiz-option" data-wrong="GI bleeding is not typical." onclick="showFeedback(this,false,'quiz21')">Melena and hematemesis</div><div class="quiz-option" data-wrong="Peripheral neuropathy alone is nonspecific." onclick="showFeedback(this,false,'quiz21')">Isolated numbness of fingers</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz21')">Joint pain, loss of eyebrow or eyelash hair, and photosensitivity</div>
+
+<div class="quiz-question">
+  <strong>Question 11:</strong> If the MAR directs blood and antibiotics, which is given first?</div>
+
+
+<div class="quiz-option" data-wrong="Blood first may increase risk." onclick="showFeedback(this,false,'quiz11')">Blood, then antibiotic</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz11')">Antibiotic, then blood</div>
+
+
+<div class="quiz-option" data-wrong="Delaying antibiotics is inappropriate." onclick="showFeedback(this,false,'quiz11')">Delay antibiotics</div>
+
+
+<div class="quiz-option" data-wrong="Simultaneous administration is unsafe." onclick="showFeedback(this,false,'quiz11')">Both together</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="SLE commonly presents with joint pain, hair loss, and photosensitivity." id="quiz21-feedback"></div>
+<div id="quiz11-feedback" class="quiz-feedback"
+     data-rationale="Treat potential infection before transfusion.">
 </div>
-<!-- 22 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 22:</strong> What is the most common symptom of systemic lupus erythematosus?</div><div class="quiz-option" data-wrong="Renal involvement may occur in SLE, but renal colic is not a typical or common presentation." onclick="showFeedback(this,false,'quiz22')">Renal colic</div><div class="quiz-option" data-wrong="Peripheral edema may occur secondary to lupus nephritis but is not a primary or most common symptom." onclick="showFeedback(this,false,'quiz22')">Peripheral edema only</div><div class="quiz-option" data-wrong="The butterfly rash is a hallmark feature of SLE but is not the most common presenting symptom." onclick="showFeedback(this,false,'quiz22')">Butterfly rash on the face</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz22')">Fatigue and joint pain (arthralgia)</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Fatigue and arthralgia are the most frequently reported symptoms in SLE and occur more commonly than the classic malar rash." id="quiz22-feedback"></div>
 </div>
-<!-- 23 -->
+
+<!-- TEST QUIZ 12 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 23:</strong> What is the correct intervention for increased intracranial pressure?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz23')">Elevate HOB 30–40° in Semi-Fowler’s and keep head midline</div><div class="quiz-option" data-wrong="Flat positioning worsens ICP." onclick="showFeedback(this,false,'quiz23')">Keep patient supine</div><div class="quiz-option" data-wrong="Head turning impedes venous return." onclick="showFeedback(this,false,'quiz23')">Allow frequent head turning</div><div class="quiz-option" data-wrong="Trendelenburg increases ICP." onclick="showFeedback(this,false,'quiz23')">Trendelenburg position</div>
+
+<div class="quiz-question">
+  <strong>Question 12:</strong> How long should a patient be monitored after starting a blood transfusion?</div>
+
+
+<div class="quiz-option" data-wrong="Immediate reactions occur early." onclick="showFeedback(this,false,'quiz12')">2 hours</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz12')">5–15 minutes</div>
+
+
+<div class="quiz-option" data-wrong="This misses early reactions." onclick="showFeedback(this,false,'quiz12')">30–60 minutes</div>
+
+
+<div class="quiz-option" data-wrong="Monitoring must start immediately." onclick="showFeedback(this,false,'quiz12')">After completion</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Elevation and midline positioning promote venous drainage and reduce ICP." id="quiz23-feedback"></div>
+<div id="quiz12-feedback" class="quiz-feedback"
+     data-rationale="Early monitoring detects acute reactions.">
 </div>
-<!-- 24 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 24:</strong> What are the most common symptoms of multiple sclerosis?</div><div class="quiz-option" data-wrong="GI symptoms are not primary." onclick="showFeedback(this,false,'quiz24')">Diarrhea</div><div class="quiz-option" data-wrong="This is not most common." onclick="showFeedback(this,false,'quiz24')">Persistent fever</div><div class="quiz-option" data-wrong="This is nonspecific." onclick="showFeedback(this,false,'quiz24')">Chronic cough</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz24')">Decreased sensation to pain and heat</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="MS affects nerve conduction, reducing pain and heat sensation." id="quiz24-feedback"></div>
 </div>
-<!-- 25 -->
+
+<!-- TEST QUIZ 13 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 25:</strong> When is an LPN intervention most important?</div><div class="quiz-option" data-wrong="Routine care is not emergent." onclick="showFeedback(this,false,'quiz25')">Stable hypertension</div><div class="quiz-option" data-wrong="Monitoring alone is insufficient." onclick="showFeedback(this,false,'quiz25')">Observation only</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz25')">During anaphylactic shock</div><div class="quiz-option" data-wrong="This is urgent but not most critical." onclick="showFeedback(this,false,'quiz25')">Mild allergic reaction</div>
+
+<div class="quiz-question">
+  <strong>Question 13:</strong> Which keywords often indicate incorrect answers on the REX-PN?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz13')">Absolute terms such as “always,” “never,” or “must”</div>
+
+
+<div class="quiz-option" data-wrong="Specific ranges are often correct." onclick="showFeedback(this,false,'quiz13')">Numerical ranges</div>
+
+
+<div class="quiz-option" data-wrong="Conditional language is common." onclick="showFeedback(this,false,'quiz13')">“May” or “often”</div>
+
+
+<div class="quiz-option" data-wrong="Clinical nuance is expected." onclick="showFeedback(this,false,'quiz13')">Context-based statements</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Anaphylaxis is immediately life-threatening and requires rapid intervention." id="quiz25-feedback"></div>
+<div id="quiz13-feedback" class="quiz-feedback"
+     data-rationale="Absolutist language leaves no room for clinical nuance.">
 </div>
-<!-- 26 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 26:</strong> How is an abdominal assessment performed?</div><div class="quiz-option" data-wrong="Palpation first alters bowel sounds." onclick="showFeedback(this,false,'quiz26')">Palpation, percussion, auscultation</div><div class="quiz-option" data-wrong="Random order is incorrect." onclick="showFeedback(this,false,'quiz26')">Any order</div><div class="quiz-option" data-wrong="This order is incorrect." onclick="showFeedback(this,false,'quiz26')">Auscultation, inspection, palpation</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz26')">Inspection, auscultation, percussion, palpation</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Auscultation precedes palpation to avoid altering bowel sounds." id="quiz26-feedback"></div>
 </div>
-<!-- 27 -->
+
+<!-- TEST QUIZ 14 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 27:</strong> How is a respiratory assessment performed?</div><div class="quiz-option" data-wrong="This sequence is abdominal." onclick="showFeedback(this,false,'quiz27')">Inspection, auscultation, percussion, palpation</div><div class="quiz-option" data-wrong="Random order is incorrect." onclick="showFeedback(this,false,'quiz27')">Any order</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz27')">Inspection, palpation, percussion, auscultation</div><div class="quiz-option" data-wrong="This omits inspection." onclick="showFeedback(this,false,'quiz27')">Palpation, percussion, auscultation</div>
+
+<div class="quiz-question">
+  <strong>Question 14:</strong> How many nurses are required to check blood before transfusion?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz14')">Two; at least one must be an RN</div>
+
+
+<div class="quiz-option" data-wrong="Unlicensed staff cannot verify blood." onclick="showFeedback(this,false,'quiz14')">RN and unlicensed staff</div>
+
+
+<div class="quiz-option" data-wrong="Single checks increase error risk." onclick="showFeedback(this,false,'quiz14')">One nurse only</div>
+
+
+<div class="quiz-option" data-wrong="Two LPNs are not permitted." onclick="showFeedback(this,false,'quiz14')">Two LPNs</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Respiratory assessment follows IPPA sequence." id="quiz27-feedback"></div>
+<div id="quiz14-feedback" class="quiz-feedback"
+     data-rationale="Two-person verification reduces transfusion errors.">
 </div>
-<!-- 28 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 28:</strong> How is post-mortem care performed?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz28')">Supine with limbs straight, dentures in, hygiene completed, pillow for viewing</div><div class="quiz-option" data-wrong="This is not respectful care." onclick="showFeedback(this,false,'quiz28')">Leave positioning unchanged</div><div class="quiz-option" data-wrong="Incomplete care." onclick="showFeedback(this,false,'quiz28')">Remove linens only</div><div class="quiz-option" data-wrong="Family viewing is not prepared." onclick="showFeedback(this,false,'quiz28')">Transfer immediately without care</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Post-mortem care prepares the body respectfully for family viewing." id="quiz28-feedback"></div>
 </div>
-<!-- 29 -->
+
+<!-- TEST QUIZ 15 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 29:</strong> What is physiological jaundice?</div><div class="quiz-option" data-wrong="Duration is incorrect." onclick="showFeedback(this,false,'quiz29')">Persists beyond 1 month</div><div class="quiz-option" data-wrong="Etiology is incorrect." onclick="showFeedback(this,false,'quiz29')">Caused by infection only</div><div class="quiz-option" data-wrong="This is pathological." onclick="showFeedback(this,false,'quiz29')">Occurs within first 24 hours</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz29')">Jaundice occurring after 24 hours of birth, lasting up to 2 weeks</div>
+
+<div class="quiz-question">
+  <strong>Question 15:</strong> What are the four major types of acute blood transfusion reactions?</div>
+
+
+<div class="quiz-option" data-wrong="These describe organ systems rather than defined transfusion reaction types." onclick="showFeedback(this,false,'quiz15')">Respiratory, renal, hepatic, cardiac</div>
+
+
+<div class="quiz-option" data-wrong="This list omits acute hemolytic reactions, which are among the most severe and exam-relevant transfusion complications." onclick="showFeedback(this,false,'quiz15')">Circulatory overload, febrile, anaphylactic, and bacterial</div>
+
+
+<div class="quiz-option" data-wrong="Viral transmission is a transfusion risk but is not classified as an acute transfusion reaction in standard nursing categories." onclick="showFeedback(this,false,'quiz15')">Hemolytic, viral, allergic, delayed</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz15')">Acute hemolytic, febrile non-hemolytic, allergic/anaphylactic, and circulatory overload</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Physiological jaundice appears after 24 hours and resolves within weeks." id="quiz29-feedback"></div>
+<div id="quiz15-feedback" class="quiz-feedback"
+     data-rationale="The four major acute transfusion reactions emphasized in nursing practice are hemolytic, febrile non-hemolytic, allergic or anaphylactic, and circulatory overload (TACO).">
 </div>
-<!-- 30 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 30:</strong> How is dehydration best assessed in a child?</div><div class="quiz-option" data-wrong="Skin turgor is less reliable in children." onclick="showFeedback(this,false,'quiz30')">Skin turgor only</div><div class="quiz-option" data-wrong="Urine color is less reliable." onclick="showFeedback(this,false,'quiz30')">Urine color</div><div class="quiz-option" data-wrong="Weight alone is insufficient acutely." onclick="showFeedback(this,false,'quiz30')">Daily weight only</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz30')">Assess mucous membranes</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Dry mucous membranes indicate dehydration in children." id="quiz30-feedback"></div>
 </div>
-<!-- 31 -->
+
+<!-- TEST QUIZ 16 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 31:</strong> How is dehydration best assessed in an infant?</div><div class="quiz-option" data-wrong="This is unreliable in infants." onclick="showFeedback(this,false,'quiz31')">Skin turgor</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz31')">Assess anterior and posterior fontanels for depression</div><div class="quiz-option" data-wrong="Temperature does not assess hydration." onclick="showFeedback(this,false,'quiz31')">Temperature</div><div class="quiz-option" data-wrong="Blood pressure is late finding." onclick="showFeedback(this,false,'quiz31')">Blood pressure</div>
+
+<div class="quiz-question">
+  <strong>Question 16:</strong> What is the most common treatment for COPD?</div>
+
+
+<div class="quiz-option" data-wrong="Oxygen avoidance is unsafe." onclick="showFeedback(this,false,'quiz16')">No oxygen therapy</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz16')">Oxygen therapy at 2 L/min or less with close monitoring</div>
+
+
+<div class="quiz-option" data-wrong="Ventilation is not first-line." onclick="showFeedback(this,false,'quiz16')">Mechanical ventilation routinely</div>
+
+
+<div class="quiz-option" data-wrong="High oxygen can worsen CO2 retention." onclick="showFeedback(this,false,'quiz16')">High-flow oxygen</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Sunken fontanels indicate dehydration in infants." id="quiz31-feedback"></div>
+<div id="quiz16-feedback" class="quiz-feedback"
+     data-rationale="Careful oxygen titration avoids hypercapnia while maintaining oxygenation.">
 </div>
-<!-- 32 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 32:</strong> When do the anterior and posterior fontanels close?</div><div class="quiz-option" data-wrong="Timing is incorrect." onclick="showFeedback(this,false,'quiz32')">Both at 6 months</div><div class="quiz-option" data-wrong="Posterior closes earlier." onclick="showFeedback(this,false,'quiz32')">Posterior at 12 months</div><div class="quiz-option" data-wrong="Anterior closes later." onclick="showFeedback(this,false,'quiz32')">Anterior at 3 months</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz32')">Anterior at 18 months; posterior at 2–3 months</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Fontanel closure timing is key for developmental assessment." id="quiz32-feedback"></div>
 </div>
-<!-- 33 -->
+
+<!-- TEST QUIZ 17 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 33:</strong> What is the correct method to chart?</div><div class="quiz-option" data-wrong="Opinion-based charting is incorrect." onclick="showFeedback(this,false,'quiz33')">Subjective opinions</div><div class="quiz-option" data-wrong="Incomplete documentation." onclick="showFeedback(this,false,'quiz33')">Abbreviated notes only</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz33')">FOCAL: factual, organized, concise, accurate, legible</div><div class="quiz-option" data-wrong="This lacks clarity standards." onclick="showFeedback(this,false,'quiz33')">Narrative only</div>
+
+<div class="quiz-question">
+  <strong>Question 17:</strong> What is the correct method to administer a fentanyl patch?</div>
+
+
+<div class="quiz-option" data-wrong="Loose placement risks underdosing." onclick="showFeedback(this,false,'quiz17')">Place without securing edges</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz17')">Press edges for adherence, sign with initials/date/time, cover for bathing</div>
+
+
+<div class="quiz-option" data-wrong="Heat increases absorption dangerously." onclick="showFeedback(this,false,'quiz17')">Apply heat to improve absorption</div>
+
+
+<div class="quiz-option" data-wrong="Cutting alters dosing." onclick="showFeedback(this,false,'quiz17')">Cut the patch</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="FOCAL ensures accurate, professional documentation." id="quiz33-feedback"></div>
+<div id="quiz17-feedback" class="quiz-feedback"
+     data-rationale="Proper adhesion and labeling ensure safe, consistent dosing.">
 </div>
-<!-- 34 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 34:</strong> What is the correct dosage for nitroglycerine spray?</div><div class="quiz-option" data-wrong="Dose and timing are incorrect." onclick="showFeedback(this,false,'quiz34')">1 mg every minute</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz34')">0.3–0.4 mg up to 3 times every 5 minutes sublingually</div><div class="quiz-option" data-wrong="Frequency is unsafe." onclick="showFeedback(this,false,'quiz34')">Every minute indefinitely</div><div class="quiz-option" data-wrong="Route is incorrect." onclick="showFeedback(this,false,'quiz34')">Spray in the back of the mouth</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Correct dosing ensures rapid relief while avoiding hypotension." id="quiz34-feedback"></div>
 </div>
-<!-- 35 -->
+
+<!-- TEST QUIZ 18 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 35:</strong> When should a tracheostomy dressing be changed?</div><div class="quiz-option" data-wrong="Emergency readiness is missing." onclick="showFeedback(this,false,'quiz35')">As needed without obturator</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz35')">Once per shift; keep obturator nearby</div><div class="quiz-option" data-wrong="This is excessive." onclick="showFeedback(this,false,'quiz35')">Every hour</div><div class="quiz-option" data-wrong="This increases infection risk." onclick="showFeedback(this,false,'quiz35')">Once weekly</div>
+
+<div class="quiz-question">
+  <strong>Question 18:</strong> How should a wound be cleansed?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz18')">Proximal to distal using midline, near side, then far side</div>
+
+
+<div class="quiz-option" data-wrong="Random order increases infection risk." onclick="showFeedback(this,false,'quiz18')">Any order</div>
+
+
+<div class="quiz-option" data-wrong="This spreads contamination." onclick="showFeedback(this,false,'quiz18')">Distal to proximal</div>
+
+
+<div class="quiz-option" data-wrong="Scrubbing damages tissue." onclick="showFeedback(this,false,'quiz18')">Aggressive scrubbing</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Regular changes and emergency readiness prevent complications." id="quiz35-feedback"></div>
+<div id="quiz18-feedback" class="quiz-feedback"
+     data-rationale="Cleaning from clean to dirty minimizes contamination.">
 </div>
-<!-- 36 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 36:</strong> What is the best preparation for a suspected myocardial infarction?</div><div class="quiz-option" data-wrong="This is insufficient alone." onclick="showFeedback(this,false,'quiz36')">Obtain consent only</div><div class="quiz-option" data-wrong="This is not preparatory." onclick="showFeedback(this,false,'quiz36')">Schedule imaging later</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz36')">Ensure crash cart readiness and clear hallways</div><div class="quiz-option" data-wrong="Delay worsens outcomes." onclick="showFeedback(this,false,'quiz36')">Wait for physician arrival</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Immediate readiness improves response to cardiac emergencies." id="quiz36-feedback"></div>
 </div>
-<!-- 37 -->
+
+<!-- TEST QUIZ 19 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 37:</strong> What is the best intervention for broken equipment?</div><div class="quiz-option" data-wrong="This delays repair." onclick="showFeedback(this,false,'quiz37')">Report verbally only</div><div class="quiz-option" data-wrong="This risks patient safety." onclick="showFeedback(this,false,'quiz37')">Continue using carefully</div><div class="quiz-option" data-wrong="This lacks follow-up." onclick="showFeedback(this,false,'quiz37')">Remove from area only</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz37')">Tag as out of order and submit maintenance requisition</div>
+
+<div class="quiz-question">
+  <strong>Question 19:</strong> What is recommended for a patient undergoing postural drainage?</div>
+
+
+<div class="quiz-option" data-wrong="Bed rest alone is insufficient." onclick="showFeedback(this,false,'quiz19')">Strict bed rest</div>
+
+
+<div class="quiz-option" data-wrong="Dry air worsens secretions." onclick="showFeedback(this,false,'quiz19')">Dry environment</div>
+
+
+<div class="quiz-option" data-wrong="Fluid restriction thickens secretions." onclick="showFeedback(this,false,'quiz19')">Restrict fluids</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz19')">Increase fluid intake</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Clear labeling and repair requests prevent harm." id="quiz37-feedback"></div>
+<div id="quiz19-feedback" class="quiz-feedback"
+     data-rationale="Fluids thin secretions and improve drainage.">
 </div>
-<!-- 38 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 38:</strong> How should acuity be managed?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz38')">Prioritize risk, unknown factors, routine care, then scheduled tasks</div><div class="quiz-option" data-wrong="Risk must be first." onclick="showFeedback(this,false,'quiz38')">Random prioritization</div><div class="quiz-option" data-wrong="Scheduling is not first." onclick="showFeedback(this,false,'quiz38')">Appointments before emergencies</div><div class="quiz-option" data-wrong="This reverses priorities." onclick="showFeedback(this,false,'quiz38')">Routine care first</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Acuity prioritization ensures urgent risks are addressed first." id="quiz38-feedback"></div>
 </div>
-<!-- 39 -->
+
+<!-- TEST QUIZ 20 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 39:</strong> How is the Apgar scale scored?</div><div class="quiz-option" data-wrong="This is incomplete." onclick="showFeedback(this,false,'quiz39')">Pulse and respirations only</div><div class="quiz-option" data-wrong="Order is incorrect." onclick="showFeedback(this,false,'quiz39')">Activity, pulse, color</div><div class="quiz-option" data-wrong="These are not Apgar components." onclick="showFeedback(this,false,'quiz39')">Weight, length, reflexes</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz39')">Appearance, Pulse, Grimace, Activity, Respirations</div>
+
+<div class="quiz-question">
+  <strong>Question 20:</strong> How should blood pressure be taken after a mastectomy?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz20')">Use the opposite arm and elevate the arm if one breast was removed</div>
+
+
+<div class="quiz-option" data-wrong="Leg BP is not first-line here." onclick="showFeedback(this,false,'quiz20')">Use the leg routinely</div>
+
+
+<div class="quiz-option" data-wrong="Affected side risks lymphedema." onclick="showFeedback(this,false,'quiz20')">Use the affected arm</div>
+
+
+<div class="quiz-option" data-wrong="Pain control alone is insufficient." onclick="showFeedback(this,false,'quiz20')">Analgesic only, no BP</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="APGAR evaluates newborn status immediately after birth." id="quiz39-feedback"></div>
+<div id="quiz20-feedback" class="quiz-feedback"
+     data-rationale="Using the unaffected side prevents lymphedema and complications.">
 </div>
-<!-- 40 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 40:</strong> How does the fetal heart rate system interpret late decelerations?</div><div class="quiz-option" data-wrong="This describes variable decelerations." onclick="showFeedback(this,false,'quiz40')">Cord compression</div><div class="quiz-option" data-wrong="This describes early decelerations." onclick="showFeedback(this,false,'quiz40')">Head compression</div><div class="quiz-option" data-wrong="Accelerations are reassuring." onclick="showFeedback(this,false,'quiz40')">Good oxygenation</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz40')">Placental uterine insufficiency; concerning pattern</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Late decelerations indicate decreased placental perfusion." id="quiz40-feedback"></div>
 </div>
-<!-- 41 -->
+
+<!-- TEST QUIZ 21 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 41:</strong> What is the most important thing to obtain before starting a blood transfusion?</div><div class="quiz-option" data-wrong="Vitals do not replace consent and ID." onclick="showFeedback(this,false,'quiz41')">Baseline vital signs only</div><div class="quiz-option" data-wrong="Equipment setup is secondary." onclick="showFeedback(this,false,'quiz41')">IV tubing preparation</div><div class="quiz-option" data-wrong="Lab work alone is insufficient." onclick="showFeedback(this,false,'quiz41')">Recent hemoglobin level</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz41')">ID bracelet confirmation and patient consent</div>
+
+<div class="quiz-question">
+  <strong>Question 21:</strong> What are common symptoms of systemic lupus erythematosus (SLE)?</div>
+
+
+<div class="quiz-option" data-wrong="These are not hallmark SLE findings." onclick="showFeedback(this,false,'quiz21')">Productive cough and wheezing</div>
+
+
+<div class="quiz-option" data-wrong="GI bleeding is not typical." onclick="showFeedback(this,false,'quiz21')">Melena and hematemesis</div>
+
+
+<div class="quiz-option" data-wrong="Peripheral neuropathy alone is nonspecific." onclick="showFeedback(this,false,'quiz21')">Isolated numbness of fingers</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz21')">Joint pain, loss of eyebrow or eyelash hair, and photosensitivity</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Correct identification and consent prevent transfusion errors." id="quiz41-feedback"></div>
+<div id="quiz21-feedback" class="quiz-feedback"
+     data-rationale="SLE commonly presents with joint pain, hair loss, and photosensitivity.">
 </div>
-<!-- 42 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 42:</strong> How does the adult Rule of 9’s work for burns?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz42')">Head 9%, each arm 9%, each leg 18%, anterior trunk 18%, posterior trunk 18%, genitals 1%</div><div class="quiz-option" data-wrong="The perineum accounts for only 1% of total body surface area in adults." onclick="showFeedback(this,false,'quiz42')">Genitals 5%</div><div class="quiz-option" data-wrong="These percentages do not match standardized adult Rule of 9’s calculations and would misestimate burn surface area." onclick="showFeedback(this,false,'quiz42')">Head 18%, arms 5% each</div><div class="quiz-option" data-wrong="The anterior trunk alone accounts for 18%, making 9% incorrect." onclick="showFeedback(this,false,'quiz42')">Chest total 9%</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="In adults, each leg equals 18%, each arm 9%, anterior trunk 18%, posterior trunk 18%, head 9%, and perineum 1%." id="quiz42-feedback"></div>
 </div>
-<!-- 43 -->
+
+<!-- TEST QUIZ 22 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 43:</strong> What are the 12 cranial nerves and their functions?</div><div class="quiz-option" data-wrong="Several nerves are missing." onclick="showFeedback(this,false,'quiz43')">Cranial nerves I–VIII only</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz43')">Olfactory, Optic, Oculomotor, Trochlear, Trigeminal, Abducent, Facial, Vestibulocochlear, Glossopharyngeal, Vagus, Accessory, Hypoglossal</div><div class="quiz-option" data-wrong="This order is incorrect." onclick="showFeedback(this,false,'quiz43')">Accessory listed first</div><div class="quiz-option" data-wrong="This list is incomplete." onclick="showFeedback(this,false,'quiz43')">Optic, facial, vagus only</div>
+
+<div class="quiz-question">
+  <strong>Question 22:</strong> What is the most common symptom of systemic lupus erythematosus?</div>
+
+
+<div class="quiz-option" data-wrong="Renal involvement may occur in SLE, but renal colic is not a typical or common presentation." onclick="showFeedback(this,false,'quiz22')">Renal colic</div>
+
+
+<div class="quiz-option" data-wrong="Peripheral edema may occur secondary to lupus nephritis but is not a primary or most common symptom." onclick="showFeedback(this,false,'quiz22')">Peripheral edema only</div>
+
+
+<div class="quiz-option" data-wrong="The butterfly rash is a hallmark feature of SLE but is not the most common presenting symptom." onclick="showFeedback(this,false,'quiz22')">Butterfly rash on the face</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz22')">Fatigue and joint pain (arthralgia)</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="The 12 cranial nerves control sensory and motor functions of the head and neck." id="quiz43-feedback"></div>
+<div id="quiz22-feedback" class="quiz-feedback"
+     data-rationale="Fatigue and arthralgia are the most frequently reported symptoms in SLE and occur more commonly than the classic malar rash.">
 </div>
-<!-- 44 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 44:</strong> What must be verified before administering a blood transfusion?</div><div class="quiz-option" data-wrong="IV patency alone is insufficient." onclick="showFeedback(this,false,'quiz44')">IV access only</div><div class="quiz-option" data-wrong="Vitals do not ensure compatibility." onclick="showFeedback(this,false,'quiz44')">Vital signs</div><div class="quiz-option" data-wrong="Consent does not confirm compatibility." onclick="showFeedback(this,false,'quiz44')">Signed consent only</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz44')">Blood type and Rh compatibility</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Correct blood type and Rh matching prevents hemolytic reactions." id="quiz44-feedback"></div>
 </div>
-<!-- 45 -->
+
+<!-- TEST QUIZ 23 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 45:</strong> What intervention is required for a conscious hypoglycemic patient?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz45')">Administer 15–20 g of rapid-acting oral glucose</div><div class="quiz-option" data-wrong="Untreated hypoglycemia can progress to seizures or loss of consciousness and requires immediate correction." onclick="showFeedback(this,false,'quiz45')">Observe only</div><div class="quiz-option" data-wrong="Insulin lowers blood glucose further and would dangerously worsen hypoglycemia." onclick="showFeedback(this,false,'quiz45')">Administer insulin</div><div class="quiz-option" data-wrong="Glucagon is administered intramuscularly or subcutaneously and is not available in tablet form." onclick="showFeedback(this,false,'quiz45')">Administer glucagon tablets</div>
+
+<div class="quiz-question">
+  <strong>Question 23:</strong> What is the correct intervention for increased intracranial pressure?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz23')">Elevate HOB 30–40° in Semi-Fowler’s and keep head midline</div>
+
+
+<div class="quiz-option" data-wrong="Flat positioning worsens ICP." onclick="showFeedback(this,false,'quiz23')">Keep patient supine</div>
+
+
+<div class="quiz-option" data-wrong="Head turning impedes venous return." onclick="showFeedback(this,false,'quiz23')">Allow frequent head turning</div>
+
+
+<div class="quiz-option" data-wrong="Trendelenburg increases ICP." onclick="showFeedback(this,false,'quiz23')">Trendelenburg position</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Conscious hypoglycemia is treated with 15–20 grams of rapid-acting carbohydrate such as glucose tablets or juice to quickly raise blood glucose." id="quiz45-feedback"></div>
+<div id="quiz23-feedback" class="quiz-feedback"
+     data-rationale="Elevation and midline positioning promote venous drainage and reduce ICP.">
 </div>
-<!-- 46 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 46:</strong> What intervention is required for an unconscious hypoglycemic patient?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz46')">Administer IV dextrose or IM glucagon</div><div class="quiz-option" data-wrong="Oral glucose is contraindicated in unconscious patients due to aspiration risk." onclick="showFeedback(this,false,'quiz46')">Oral glucose</div><div class="quiz-option" data-wrong="Insulin would further decrease blood glucose and may cause irreversible neurologic injury." onclick="showFeedback(this,false,'quiz46')">Administer insulin</div><div class="quiz-option" data-wrong="Hypoglycemia is immediately life-threatening and requires rapid pharmacologic treatment." onclick="showFeedback(this,false,'quiz46')">Monitor only</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="An unconscious hypoglycemic patient requires IV dextrose if IV access is available or IM glucagon if IV access is not established." id="quiz46-feedback"></div>
 </div>
-<!-- 47 -->
+
+<!-- TEST QUIZ 24 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 47:</strong> What is Reye syndrome?</div><div class="quiz-option" data-wrong="This describes influenza." onclick="showFeedback(this,false,'quiz47')">A viral respiratory illness</div><div class="quiz-option" data-wrong="This affects adults primarily." onclick="showFeedback(this,false,'quiz47')">Adult liver disease</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz47')">A condition in children with fever after aspirin use causing vomiting and nausea</div><div class="quiz-option" data-wrong="This is unrelated to aspirin." onclick="showFeedback(this,false,'quiz47')">Antibiotic reaction</div>
+
+<div class="quiz-question">
+  <strong>Question 24:</strong> What are the most common symptoms of multiple sclerosis?</div>
+
+
+<div class="quiz-option" data-wrong="GI symptoms are not primary." onclick="showFeedback(this,false,'quiz24')">Diarrhea</div>
+
+
+<div class="quiz-option" data-wrong="This is not most common." onclick="showFeedback(this,false,'quiz24')">Persistent fever</div>
+
+
+<div class="quiz-option" data-wrong="This is nonspecific." onclick="showFeedback(this,false,'quiz24')">Chronic cough</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz24')">Decreased sensation to pain and heat</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Reye syndrome is linked to aspirin use in children with viral illness." id="quiz47-feedback"></div>
+<div id="quiz24-feedback" class="quiz-feedback"
+     data-rationale="MS affects nerve conduction, reducing pain and heat sensation.">
 </div>
-<!-- 48 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 48:</strong> What should be done if unfamiliar with a disease?</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz48')">Leave the room, research the disease, and follow facility protocol</div><div class="quiz-option" data-wrong="Delegation does not replace knowledge." onclick="showFeedback(this,false,'quiz48')">Ask another nurse to decide</div><div class="quiz-option" data-wrong="Guessing risks harm." onclick="showFeedback(this,false,'quiz48')">Use clinical judgment only</div><div class="quiz-option" data-wrong="Treating without knowledge is unsafe." onclick="showFeedback(this,false,'quiz48')">Proceed without review</div>
-
-
-
-
-<div class="quiz-feedback" data-rationale="Preparation ensures safe and evidence-based care." id="quiz48-feedback"></div>
 </div>
-<!-- 49 -->
+
+<!-- TEST QUIZ 25 -->
 <div class="quiz-box">
-<div class="quiz-question"><strong>Question 49:</strong> What effect occurs when drugs are taken too frequently?</div><div class="quiz-option" data-wrong="Efficacy does not increase." onclick="showFeedback(this,false,'quiz49')">Improved effectiveness</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz49')">Accumulative effect</div><div class="quiz-option" data-wrong="Tolerance is not immediate." onclick="showFeedback(this,false,'quiz49')">Immediate tolerance</div><div class="quiz-option" data-wrong="Drugs are not eliminated faster." onclick="showFeedback(this,false,'quiz49')">Rapid clearance</div>
+
+<div class="quiz-question">
+  <strong>Question 25:</strong> When is an LPN intervention most important?</div>
+
+
+<div class="quiz-option" data-wrong="Routine care is not emergent." onclick="showFeedback(this,false,'quiz25')">Stable hypertension</div>
+
+
+<div class="quiz-option" data-wrong="Monitoring alone is insufficient." onclick="showFeedback(this,false,'quiz25')">Observation only</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz25')">During anaphylactic shock</div>
+
+
+<div class="quiz-option" data-wrong="This is urgent but not most critical." onclick="showFeedback(this,false,'quiz25')">Mild allergic reaction</div>
 
 
 
 
-<div class="quiz-feedback" data-rationale="Repeated dosing can cause drug accumulation and toxicity." id="quiz49-feedback"></div>
+<div id="quiz25-feedback" class="quiz-feedback"
+     data-rationale="Anaphylaxis is immediately life-threatening and requires rapid intervention.">
 </div>
-<!-- 50 -->
-<div class="quiz-box">
-<div class="quiz-question"><strong>Question 50:</strong> What is a common symptom of arterial insufficiency?</div><div class="quiz-option" data-wrong="Edema is venous-related." onclick="showFeedback(this,false,'quiz50')">Pitting edema</div><div class="quiz-option" onclick="showFeedback(this,true,'quiz50')">Cold extremity with absent pedal pulses</div><div class="quiz-option" data-wrong="Warm skin indicates venous disease." onclick="showFeedback(this,false,'quiz50')">Warm, swollen limb</div><div class="quiz-option" data-wrong="Redness suggests inflammation." onclick="showFeedback(this,false,'quiz50')">Erythema</div>
+</div>
 
+<!-- TEST QUIZ 26 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 26:</strong> How is an abdominal assessment performed?</div>
+
+
+<div class="quiz-option" data-wrong="Palpation first alters bowel sounds." onclick="showFeedback(this,false,'quiz26')">Palpation, percussion, auscultation</div>
+
+
+<div class="quiz-option" data-wrong="Random order is incorrect." onclick="showFeedback(this,false,'quiz26')">Any order</div>
+
+
+<div class="quiz-option" data-wrong="This order is incorrect." onclick="showFeedback(this,false,'quiz26')">Auscultation, inspection, palpation</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz26')">Inspection, auscultation, percussion, palpation</div>
+
+
+
+
+<div id="quiz26-feedback" class="quiz-feedback"
+     data-rationale="Auscultation precedes palpation to avoid altering bowel sounds.">
+</div>
+</div>
+
+<!-- TEST QUIZ 27 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 27:</strong> How is a respiratory assessment performed?</div>
+
+
+<div class="quiz-option" data-wrong="This sequence is abdominal." onclick="showFeedback(this,false,'quiz27')">Inspection, auscultation, percussion, palpation</div>
+
+
+<div class="quiz-option" data-wrong="Random order is incorrect." onclick="showFeedback(this,false,'quiz27')">Any order</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz27')">Inspection, palpation, percussion, auscultation</div>
+
+
+<div class="quiz-option" data-wrong="This omits inspection." onclick="showFeedback(this,false,'quiz27')">Palpation, percussion, auscultation</div>
+
+
+
+
+<div id="quiz27-feedback" class="quiz-feedback"
+     data-rationale="Respiratory assessment follows IPPA sequence.">
+</div>
+</div>
+
+<!-- TEST QUIZ 28 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 28:</strong> How is post-mortem care performed?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz28')">Supine with limbs straight, dentures in, hygiene completed, pillow for viewing</div>
+
+
+<div class="quiz-option" data-wrong="This is not respectful care." onclick="showFeedback(this,false,'quiz28')">Leave positioning unchanged</div>
+
+
+<div class="quiz-option" data-wrong="Incomplete care." onclick="showFeedback(this,false,'quiz28')">Remove linens only</div>
+
+
+<div class="quiz-option" data-wrong="Family viewing is not prepared." onclick="showFeedback(this,false,'quiz28')">Transfer immediately without care</div>
+
+
+
+
+<div id="quiz28-feedback" class="quiz-feedback"
+     data-rationale="Post-mortem care prepares the body respectfully for family viewing.">
+</div>
+</div>
+
+<!-- TEST QUIZ 29 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 29:</strong> What is physiological jaundice?</div>
+
+
+<div class="quiz-option" data-wrong="Duration is incorrect." onclick="showFeedback(this,false,'quiz29')">Persists beyond 1 month</div>
+
+
+<div class="quiz-option" data-wrong="Etiology is incorrect." onclick="showFeedback(this,false,'quiz29')">Caused by infection only</div>
+
+
+<div class="quiz-option" data-wrong="This is pathological." onclick="showFeedback(this,false,'quiz29')">Occurs within first 24 hours</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz29')">Jaundice occurring after 24 hours of birth, lasting up to 2 weeks</div>
+
+
+
+
+<div id="quiz29-feedback" class="quiz-feedback"
+     data-rationale="Physiological jaundice appears after 24 hours and resolves within weeks.">
+</div>
+</div>
+
+<!-- TEST QUIZ 30 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 30:</strong> How is dehydration best assessed in a child?</div>
+
+
+<div class="quiz-option" data-wrong="Skin turgor is less reliable in children." onclick="showFeedback(this,false,'quiz30')">Skin turgor only</div>
+
+
+<div class="quiz-option" data-wrong="Urine color is less reliable." onclick="showFeedback(this,false,'quiz30')">Urine color</div>
+
+
+<div class="quiz-option" data-wrong="Weight alone is insufficient acutely." onclick="showFeedback(this,false,'quiz30')">Daily weight only</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz30')">Assess mucous membranes</div>
+
+
+
+
+<div id="quiz30-feedback" class="quiz-feedback"
+     data-rationale="Dry mucous membranes indicate dehydration in children.">
+</div>
+</div>
+
+<!-- TEST QUIZ 31 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 31:</strong> How is dehydration best assessed in an infant?</div>
+
+
+<div class="quiz-option" data-wrong="This is unreliable in infants." onclick="showFeedback(this,false,'quiz31')">Skin turgor</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz31')">Assess anterior and posterior fontanels for depression</div>
+
+
+<div class="quiz-option" data-wrong="Temperature does not assess hydration." onclick="showFeedback(this,false,'quiz31')">Temperature</div>
+
+
+<div class="quiz-option" data-wrong="Blood pressure is late finding." onclick="showFeedback(this,false,'quiz31')">Blood pressure</div>
+
+
+
+
+<div id="quiz31-feedback" class="quiz-feedback"
+     data-rationale="Sunken fontanels indicate dehydration in infants.">
+</div>
+</div>
+
+<!-- TEST QUIZ 32 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 32:</strong> When do the anterior and posterior fontanels close?</div>
+
+
+<div class="quiz-option" data-wrong="Timing is incorrect." onclick="showFeedback(this,false,'quiz32')">Both at 6 months</div>
+
+
+<div class="quiz-option" data-wrong="Posterior closes earlier." onclick="showFeedback(this,false,'quiz32')">Posterior at 12 months</div>
+
+
+<div class="quiz-option" data-wrong="Anterior closes later." onclick="showFeedback(this,false,'quiz32')">Anterior at 3 months</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz32')">Anterior at 18 months; posterior at 2–3 months</div>
+
+
+
+
+<div id="quiz32-feedback" class="quiz-feedback"
+     data-rationale="Fontanel closure timing is key for developmental assessment.">
+</div>
+</div>
+
+<!-- TEST QUIZ 33 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 33:</strong> What is the correct method to chart?</div>
+
+
+<div class="quiz-option" data-wrong="Opinion-based charting is incorrect." onclick="showFeedback(this,false,'quiz33')">Subjective opinions</div>
+
+
+<div class="quiz-option" data-wrong="Incomplete documentation." onclick="showFeedback(this,false,'quiz33')">Abbreviated notes only</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz33')">FOCAL: factual, organized, concise, accurate, legible</div>
+
+
+<div class="quiz-option" data-wrong="This lacks clarity standards." onclick="showFeedback(this,false,'quiz33')">Narrative only</div>
+
+
+
+
+<div id="quiz33-feedback" class="quiz-feedback"
+     data-rationale="FOCAL ensures accurate, professional documentation.">
+</div>
+</div>
+
+<!-- TEST QUIZ 34 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 34:</strong> What is the correct dosage for nitroglycerine spray?</div>
+
+
+<div class="quiz-option" data-wrong="Dose and timing are incorrect." onclick="showFeedback(this,false,'quiz34')">1 mg every minute</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz34')">0.3–0.4 mg up to 3 times every 5 minutes sublingually</div>
+
+
+<div class="quiz-option" data-wrong="Frequency is unsafe." onclick="showFeedback(this,false,'quiz34')">Every minute indefinitely</div>
+
+
+<div class="quiz-option" data-wrong="Route is incorrect." onclick="showFeedback(this,false,'quiz34')">Spray in the back of the mouth</div>
+
+
+
+
+<div id="quiz34-feedback" class="quiz-feedback"
+     data-rationale="Correct dosing ensures rapid relief while avoiding hypotension.">
+</div>
+</div>
+
+<!-- TEST QUIZ 35 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 35:</strong> When should a tracheostomy dressing be changed?</div>
+
+
+<div class="quiz-option" data-wrong="Emergency readiness is missing." onclick="showFeedback(this,false,'quiz35')">As needed without obturator</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz35')">Once per shift; keep obturator nearby</div>
+
+
+<div class="quiz-option" data-wrong="This is excessive." onclick="showFeedback(this,false,'quiz35')">Every hour</div>
+
+
+<div class="quiz-option" data-wrong="This increases infection risk." onclick="showFeedback(this,false,'quiz35')">Once weekly</div>
+
+
+
+
+<div id="quiz35-feedback" class="quiz-feedback"
+     data-rationale="Regular changes and emergency readiness prevent complications.">
+</div>
+</div>
+
+<!-- TEST QUIZ 36 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 36:</strong> What is the best preparation for a suspected myocardial infarction?</div>
+
+
+<div class="quiz-option" data-wrong="This is insufficient alone." onclick="showFeedback(this,false,'quiz36')">Obtain consent only</div>
+
+
+<div class="quiz-option" data-wrong="This is not preparatory." onclick="showFeedback(this,false,'quiz36')">Schedule imaging later</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz36')">Ensure crash cart readiness and clear hallways</div>
+
+
+<div class="quiz-option" data-wrong="Delay worsens outcomes." onclick="showFeedback(this,false,'quiz36')">Wait for physician arrival</div>
+
+
+
+
+<div id="quiz36-feedback" class="quiz-feedback"
+     data-rationale="Immediate readiness improves response to cardiac emergencies.">
+</div>
+</div>
+
+<!-- TEST QUIZ 37 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 37:</strong> What is the best intervention for broken equipment?</div>
+
+
+<div class="quiz-option" data-wrong="This delays repair." onclick="showFeedback(this,false,'quiz37')">Report verbally only</div>
+
+
+<div class="quiz-option" data-wrong="This risks patient safety." onclick="showFeedback(this,false,'quiz37')">Continue using carefully</div>
+
+
+<div class="quiz-option" data-wrong="This lacks follow-up." onclick="showFeedback(this,false,'quiz37')">Remove from area only</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz37')">Tag as out of order and submit maintenance requisition</div>
+
+
+
+
+<div id="quiz37-feedback" class="quiz-feedback"
+     data-rationale="Clear labeling and repair requests prevent harm.">
+</div>
+</div>
+
+<!-- TEST QUIZ 38 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 38:</strong> How should acuity be managed?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz38')">Prioritize risk, unknown factors, routine care, then scheduled tasks</div>
+
+
+<div class="quiz-option" data-wrong="Risk must be first." onclick="showFeedback(this,false,'quiz38')">Random prioritization</div>
+
+
+<div class="quiz-option" data-wrong="Scheduling is not first." onclick="showFeedback(this,false,'quiz38')">Appointments before emergencies</div>
+
+
+<div class="quiz-option" data-wrong="This reverses priorities." onclick="showFeedback(this,false,'quiz38')">Routine care first</div>
+
+
+
+
+<div id="quiz38-feedback" class="quiz-feedback"
+     data-rationale="Acuity prioritization ensures urgent risks are addressed first.">
+</div>
+</div>
+
+<!-- TEST QUIZ 39 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 39:</strong> How is the Apgar scale scored?</div>
+
+
+<div class="quiz-option" data-wrong="This is incomplete." onclick="showFeedback(this,false,'quiz39')">Pulse and respirations only</div>
+
+
+<div class="quiz-option" data-wrong="Order is incorrect." onclick="showFeedback(this,false,'quiz39')">Activity, pulse, color</div>
+
+
+<div class="quiz-option" data-wrong="These are not Apgar components." onclick="showFeedback(this,false,'quiz39')">Weight, length, reflexes</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz39')">Appearance, Pulse, Grimace, Activity, Respirations</div>
+
+
+
+
+<div id="quiz39-feedback" class="quiz-feedback"
+     data-rationale="APGAR evaluates newborn status immediately after birth.">
+</div>
+</div>
+
+<!-- TEST QUIZ 40 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 40:</strong> How does the fetal heart rate system interpret late decelerations?</div>
+
+
+<div class="quiz-option" data-wrong="This describes variable decelerations." onclick="showFeedback(this,false,'quiz40')">Cord compression</div>
+
+
+<div class="quiz-option" data-wrong="This describes early decelerations." onclick="showFeedback(this,false,'quiz40')">Head compression</div>
+
+
+<div class="quiz-option" data-wrong="Accelerations are reassuring." onclick="showFeedback(this,false,'quiz40')">Good oxygenation</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz40')">Placental uterine insufficiency; concerning pattern</div>
+
+
+
+
+<div id="quiz40-feedback" class="quiz-feedback"
+     data-rationale="Late decelerations indicate decreased placental perfusion.">
+</div>
+</div>
+
+<!-- TEST QUIZ 41 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 41:</strong> What is the most important thing to obtain before starting a blood transfusion?</div>
+
+
+<div class="quiz-option" data-wrong="Vitals do not replace consent and ID." onclick="showFeedback(this,false,'quiz41')">Baseline vital signs only</div>
+
+
+<div class="quiz-option" data-wrong="Equipment setup is secondary." onclick="showFeedback(this,false,'quiz41')">IV tubing preparation</div>
+
+
+<div class="quiz-option" data-wrong="Lab work alone is insufficient." onclick="showFeedback(this,false,'quiz41')">Recent hemoglobin level</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz41')">ID bracelet confirmation and patient consent</div>
+
+
+
+
+<div id="quiz41-feedback" class="quiz-feedback"
+     data-rationale="Correct identification and consent prevent transfusion errors.">
+</div>
+</div>
+
+<!-- TEST QUIZ 42 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 42:</strong> How does the adult Rule of 9’s work for burns?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz42')">Head 9%, each arm 9%, each leg 18%, anterior trunk 18%, posterior trunk 18%, genitals 1%</div>
+
+
+<div class="quiz-option" data-wrong="The perineum accounts for only 1% of total body surface area in adults." onclick="showFeedback(this,false,'quiz42')">Genitals 5%</div>
+
+
+<div class="quiz-option" data-wrong="These percentages do not match standardized adult Rule of 9’s calculations and would misestimate burn surface area." onclick="showFeedback(this,false,'quiz42')">Head 18%, arms 5% each</div>
+
+
+<div class="quiz-option" data-wrong="The anterior trunk alone accounts for 18%, making 9% incorrect." onclick="showFeedback(this,false,'quiz42')">Chest total 9%</div>
+
+
+
+
+<div id="quiz42-feedback" class="quiz-feedback"
+     data-rationale="In adults, each leg equals 18%, each arm 9%, anterior trunk 18%, posterior trunk 18%, head 9%, and perineum 1%.">
+</div>
+</div>
+
+<!-- TEST QUIZ 43 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 43:</strong> What are the 12 cranial nerves and their functions?</div>
+
+
+<div class="quiz-option" data-wrong="Several nerves are missing." onclick="showFeedback(this,false,'quiz43')">Cranial nerves I–VIII only</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz43')">Olfactory, Optic, Oculomotor, Trochlear, Trigeminal, Abducent, Facial, Vestibulocochlear, Glossopharyngeal, Vagus, Accessory, Hypoglossal</div>
+
+
+<div class="quiz-option" data-wrong="This order is incorrect." onclick="showFeedback(this,false,'quiz43')">Accessory listed first</div>
+
+
+<div class="quiz-option" data-wrong="This list is incomplete." onclick="showFeedback(this,false,'quiz43')">Optic, facial, vagus only</div>
+
+
+
+
+<div id="quiz43-feedback" class="quiz-feedback"
+     data-rationale="The 12 cranial nerves control sensory and motor functions of the head and neck.">
+</div>
+</div>
+
+<!-- TEST QUIZ 44 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 44:</strong> What must be verified before administering a blood transfusion?</div>
+
+
+<div class="quiz-option" data-wrong="IV patency alone is insufficient." onclick="showFeedback(this,false,'quiz44')">IV access only</div>
+
+
+<div class="quiz-option" data-wrong="Vitals do not ensure compatibility." onclick="showFeedback(this,false,'quiz44')">Vital signs</div>
+
+
+<div class="quiz-option" data-wrong="Consent does not confirm compatibility." onclick="showFeedback(this,false,'quiz44')">Signed consent only</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz44')">Blood type and Rh compatibility</div>
+
+
+
+
+<div id="quiz44-feedback" class="quiz-feedback"
+     data-rationale="Correct blood type and Rh matching prevents hemolytic reactions.">
+</div>
+</div>
+
+<!-- TEST QUIZ 45 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 45:</strong> What intervention is required for a conscious hypoglycemic patient?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz45')">Administer 15–20 g of rapid-acting oral glucose</div>
+
+
+<div class="quiz-option" data-wrong="Untreated hypoglycemia can progress to seizures or loss of consciousness and requires immediate correction." onclick="showFeedback(this,false,'quiz45')">Observe only</div>
+
+
+<div class="quiz-option" data-wrong="Insulin lowers blood glucose further and would dangerously worsen hypoglycemia." onclick="showFeedback(this,false,'quiz45')">Administer insulin</div>
+
+
+<div class="quiz-option" data-wrong="Glucagon is administered intramuscularly or subcutaneously and is not available in tablet form." onclick="showFeedback(this,false,'quiz45')">Administer glucagon tablets</div>
+
+
+
+
+<div id="quiz45-feedback" class="quiz-feedback"
+     data-rationale="Conscious hypoglycemia is treated with 15–20 grams of rapid-acting carbohydrate such as glucose tablets or juice to quickly raise blood glucose.">
+</div>
+</div>
+
+<!-- TEST QUIZ 46 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 46:</strong> What intervention is required for an unconscious hypoglycemic patient?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz46')">Administer IV dextrose or IM glucagon</div>
+
+
+<div class="quiz-option" data-wrong="Oral glucose is contraindicated in unconscious patients due to aspiration risk." onclick="showFeedback(this,false,'quiz46')">Oral glucose</div>
+
+
+<div class="quiz-option" data-wrong="Insulin would further decrease blood glucose and may cause irreversible neurologic injury." onclick="showFeedback(this,false,'quiz46')">Administer insulin</div>
+
+
+<div class="quiz-option" data-wrong="Hypoglycemia is immediately life-threatening and requires rapid pharmacologic treatment." onclick="showFeedback(this,false,'quiz46')">Monitor only</div>
+
+
+
+
+<div id="quiz46-feedback" class="quiz-feedback"
+     data-rationale="An unconscious hypoglycemic patient requires IV dextrose if IV access is available or IM glucagon if IV access is not established.">
+</div>
+</div>
+
+<!-- TEST QUIZ 47 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 47:</strong> What is Reye syndrome?</div>
+
+
+<div class="quiz-option" data-wrong="This describes influenza." onclick="showFeedback(this,false,'quiz47')">A viral respiratory illness</div>
+
+
+<div class="quiz-option" data-wrong="This affects adults primarily." onclick="showFeedback(this,false,'quiz47')">Adult liver disease</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz47')">A condition in children with fever after aspirin use causing vomiting and nausea</div>
+
+
+<div class="quiz-option" data-wrong="This is unrelated to aspirin." onclick="showFeedback(this,false,'quiz47')">Antibiotic reaction</div>
+
+
+
+
+<div id="quiz47-feedback" class="quiz-feedback"
+     data-rationale="Reye syndrome is linked to aspirin use in children with viral illness.">
+</div>
+</div>
+
+<!-- TEST QUIZ 48 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 48:</strong> What should be done if unfamiliar with a disease?</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz48')">Leave the room, research the disease, and follow facility protocol</div>
+
+
+<div class="quiz-option" data-wrong="Delegation does not replace knowledge." onclick="showFeedback(this,false,'quiz48')">Ask another nurse to decide</div>
+
+
+<div class="quiz-option" data-wrong="Guessing risks harm." onclick="showFeedback(this,false,'quiz48')">Use clinical judgment only</div>
+
+
+<div class="quiz-option" data-wrong="Treating without knowledge is unsafe." onclick="showFeedback(this,false,'quiz48')">Proceed without review</div>
+
+
+
+
+<div id="quiz48-feedback" class="quiz-feedback"
+     data-rationale="Preparation ensures safe and evidence-based care.">
+</div>
+</div>
+
+<!-- TEST QUIZ 49 -->
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 49:</strong> What effect occurs when drugs are taken too frequently?</div>
+
+
+<div class="quiz-option" data-wrong="Efficacy does not increase." onclick="showFeedback(this,false,'quiz49')">Improved effectiveness</div>
+
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz49')">Accumulative effect</div>
+
+
+<div class="quiz-option" data-wrong="Tolerance is not immediate." onclick="showFeedback(this,false,'quiz49')">Immediate tolerance</div>
+
+
+<div class="quiz-option" data-wrong="Drugs are not eliminated faster." onclick="showFeedback(this,false,'quiz49')">Rapid clearance</div>
+
+
+
+
+<div id="quiz49-feedback" class="quiz-feedback"
+     data-rationale="Repeated dosing can cause drug accumulation and toxicity.">
+</div>
+</div>
+
+<div class="quiz-box">
+
+<div class="quiz-question">
+  <strong>Question 50:</strong> What is a common symptom of arterial insufficiency?
+</div>
+
+<div class="quiz-option" data-wrong="Edema is venous-related." onclick="showFeedback(this,false,'quiz50')">Pitting edema</div>
+
+<div class="quiz-option" onclick="showFeedback(this,true,'quiz50')">Cold extremity with absent pedal pulses</div>
+
+<div class="quiz-option" data-wrong="Warm skin indicates venous disease." onclick="showFeedback(this,false,'quiz50')">Warm, swollen limb</div>
+
+<div class="quiz-option" data-wrong="Redness suggests inflammation." onclick="showFeedback(this,false,'quiz50')">Erythema</div>
+
+<div id="quiz50-feedback" class="quiz-feedback"
+     data-rationale="Cold extremities and absent pulses indicate poor arterial flow.">
+</div>
+
+</div>
+
+<script>
+function showFeedback(optionElement, isCorrect, quizId) {
+  const feedbackEl = document.getElementById(quizId + '-feedback');
+  const allOptions = optionElement.parentElement.querySelectorAll('.quiz-option');
+
+  allOptions.forEach(opt => opt.classList.remove('correct','incorrect'));
+  feedbackEl.classList.remove('feedback-correct','feedback-incorrect');
+
+  if (isCorrect === true) {
+    optionElement.classList.add('correct');
+    feedbackEl.classList.add('feedback-correct');
+    feedbackEl.textContent = "CORRECT: " + feedbackEl.dataset.rationale;
+  } else {
+    optionElement.classList.add('incorrect');
+    feedbackEl.classList.add('feedback-incorrect');
+    const wrong = optionElement.getAttribute("data-wrong");
+    feedbackEl.textContent = "INCORRECT: " + (wrong ? wrong : "Incorrect answer.");
+  }
+
+  feedbackEl.style.display = 'block';
+}
+</script>
 
 <script>
 function showFeedback(optionElement, isCorrect, quizId) {
